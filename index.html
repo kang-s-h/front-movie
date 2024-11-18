@@ -1,12 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>MovieList</title>
+    <link rel="stylesheet" href="src/styles/main.css" />
+    <link rel="stylesheet" href="src/styles/tablet.css" />
+    <link rel="stylesheet" href="src/styles/reactJs.css" />
+    <link rel="stylesheet" href="src/styles/moblie.css" />
   </head>
   <body>
-    여기에 기본 html 작성
+    <header class="header">
+      <img src="/front-movie/src/assets/logo.png" class="header__logo" />
+      <input class="header__search" placeholder="검색" />
+    </header>
+    <section class="section">
+      <div class="section__title">지금 인기있는 영화</div>
+      <div class="section__main"></div>
+      <button class="section__button">더보기</button>
+    </section>
+    <script src="src/apis/getData.js" type="module"></script>
+    <script src="src/constants/index.js" type="module"></script>
+    <script src="src/apis/makeMovie.js" type="module"></script>
+    <script src="src/listener/listener.js" type="module"></script>
+    <script src="src/errorFunc/error.js" type="module"></script>
+    <script src="src/constants/domEle.js" type="module"></script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>

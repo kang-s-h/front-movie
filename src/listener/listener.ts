@@ -1,12 +1,10 @@
-require('dotenv').config();
+import { DOM_ELEMENTS } from '../constants/domEle.js';
+import { searchMakeMovie } from '../apis/makeMovie.js';
+import { popularMovie } from '../apis/makeMovie.js';
 
-import { DOM_ELEMENTS } from './constants/domEle.js';
-import { searchMakeMovie } from './apis/makeMovie.js';
-import { popularMovie } from './apis/makeMovie.js';
-
-export let pageNum = 1;
-export let num = 1;
-export let currentQuery = '';
+export let pageNum: number = 1;
+export let num: number = 1;
+export let currentQuery: string = '';
 
 DOM_ELEMENTS.$button?.addEventListener('click', () => {
   if (currentQuery) {
