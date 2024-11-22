@@ -1,14 +1,14 @@
 import { BASE_URL, options, options2 } from '../constants/index.js';
 
-// 인기 영화 API 가져오는 함수
-export async function getData(page: number) {
+export async function getData(page) {
   const response = await fetch(`${BASE_URL}/movie/popular?language=ko-KR&page=${page}`, options);
   const data = await response.json();
   const $data = data.results;
+  console.log($data);
   return $data;
 }
-// 검색한 영화 API 가져오는 함수
-export async function getSearchData(input: string, page: number) {
+
+export async function getSearchData(input, page) {
   const response2 = await fetch(
     `${BASE_URL}/search/movie?include_adult=false&language=ko-KR&page=${page}&query=${input}`,
     options2

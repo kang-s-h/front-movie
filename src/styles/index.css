@@ -1,0 +1,16 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: grid;
+  grid-template-rows: minmax(100fr, 1o1fr) 1780fr;
+  grid-template-columns: 100fr 650fr 140fr;
+  background-color: black;
+}

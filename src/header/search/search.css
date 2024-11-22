@@ -1,0 +1,10 @@
+.header__search {
+  padding: 5px;
+  margin-right: 15px;
+  border-radius: 8px;
+  border: 1px 0px 0px 0px;
+  background-image: url(/src/assets/search_button.png);
+  background-position: right 5px center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+}

@@ -1,0 +1,17 @@
+.section__main--box-img {
+  width: 130px;
+  height: 130px;
+}
+
+.section__main--box-title {
+  color: white;
+  max-width: 130px;
+}
+
+.section__main--box-rate {
+  color: white;
+}
+
+.section__main--box-rateImg {
+  vertical-align: text-bottom;
+}

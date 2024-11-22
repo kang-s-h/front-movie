@@ -1,0 +1,9 @@
+.section {
+  margin: 50px 0px 50px 100px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-rows: 60fr 750fr 108fr;
+  display: flex;
+  flex-direction: column;
+}

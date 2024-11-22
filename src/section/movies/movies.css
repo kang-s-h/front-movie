@@ -1,0 +1,14 @@
+.section__main {
+  grid-row: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.section__main--box {
+  margin-bottom: 30px;
+  flex-basis: calc(25%);
+  max-width: calc(25%);
+}
