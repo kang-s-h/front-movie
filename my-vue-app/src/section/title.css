@@ -1,0 +1,10 @@
+.section__title {
+  margin-bottom: 30px;
+  font-family: Roboto;
+  font-size: 18px;
+  text-align: left;
+  font-weight: bolder;
+  color: white;
+  grid-row: 1/2;
+  justify-items: center;
+}

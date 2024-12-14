@@ -1,0 +1,28 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0%;
+  display: grid;
+  grid-template-rows: 100fr 80fr 1780fr 129fr;
+  grid-template-columns: 100fr 650fr 140fr;
+}
+
+.section {
+  margin-top: 30px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-rows: 60fr 750fr 108fr;
+  margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+}

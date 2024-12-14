@@ -1,0 +1,8 @@
+.section__main {
+  grid-row: 2/3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-self: flex-start;
+  align-items: flex-start;
+  flex-direction: row;
+}

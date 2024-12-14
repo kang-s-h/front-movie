@@ -1,0 +1,12 @@
+.section__button {
+  font-family: Roboto;
+  height: 30px;
+  grid-row: 3/4;
+  background-color: #f33f3f;
+  border-radius: 4px;
+  color: white;
+  border: 1px solid red;
+  margin-top: 10px;
+  margin-right: 115px;
+  width: 89%;
+}
