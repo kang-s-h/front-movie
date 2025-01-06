@@ -1,4 +1,3 @@
-html,
 body {
   height: 100%;
   width: 100%;
@@ -12,17 +11,27 @@ body {
   width: 100%;
   margin: 0%;
   display: grid;
-  grid-template-rows: 100fr 80fr 1780fr 129fr;
-  grid-template-columns: 100fr 650fr 140fr;
+  grid-template-rows: 40px 30px 1780fr 129fr;
+  grid-template-columns: 100fr 650fr 100fr;
 }
 
 .section {
-  margin-top: 30px;
   grid-column: 2/3;
   grid-row: 3/4;
   display: grid;
   grid-template-rows: 60fr 750fr 108fr;
-  margin-left: 100px;
+
   display: flex;
   flex-direction: column;
+}
+
+@media (max-width: 1024px) {
+  #root {
+    height: 100%;
+    width: 100%;
+    margin: 0%;
+    display: grid;
+    grid-template-rows: 40px 30px 1780fr 129fr;
+    grid-template-columns: 10px 650fr 10px;
+  }
 }

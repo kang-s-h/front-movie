@@ -25,3 +25,14 @@
   background-repeat: no-repeat;
   background-size: 20px;
 }
+@media (max-width: 480px) {
+  .header__search {
+    width: 20px;
+    background-image: url(/src/assets/search_button.png);
+    background-position: right 5px center;
+    background-size: 20px;
+  }
+  .header__search::placeholder {
+    opacity: 0;
+  }
+}

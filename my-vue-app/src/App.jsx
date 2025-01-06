@@ -1,18 +1,17 @@
-// App.jsx
-import { useState, useEffect } from "react";
-import Header from "./header/Header";
-import Title from "./section/Title";
-import Button from "./section/Button";
-import ShowMovie from "./section/ShowMovie";
-import { getPopularMovies, getSearchMovies } from "./api/API";
-import "./App.css";
+import { useState, useEffect } from 'react';
+import Header from './header/Header';
+import Title from './section/Title';
+import Button from './section/Button';
+import ShowMovie from './section/ShowMovie';
+import { getPopularMovies, getSearchMovies } from './api/API';
+import './App.css';
 
 function App() {
   const [movies, setMovies] = useState([]);
-  const [search, setSearch] = useState("");
+  const [search, setSearch] = useState('');
   const [page, setPage] = useState(1);
   const [button, setButton] = useState(true);
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
 
   // 초기 로딩 - 인기 영화
   useEffect(() => {
@@ -21,7 +20,7 @@ function App() {
 
   // 검색어 변경 처리
   useEffect(() => {
-    if (search === "") {
+    if (search === '') {
       loadPopularMovies(1);
     } else {
       loadSearchMovies(1, search);
@@ -34,7 +33,7 @@ function App() {
     if (currentPage === 1) {
       setMovies(popularMovies);
     } else setMovies((prev) => [...prev, ...popularMovies]);
-    setMessage("지금 인기 있는 영화");
+    setMessage('지금 인기 있는 영화');
     setButton(popularMovies.length >= 20);
     setPage(currentPage);
   };
@@ -44,7 +43,7 @@ function App() {
     const searchMovies = await getSearchMovies(currentPage, query);
     if (searchMovies.length === 0) {
       setMovies([]);
-      setMessage("검색 결과 없음");
+      setMessage('검색 결과 없음');
       setButton(false); // 검색 결과 없으면 버튼 숨김
     } else {
       if (currentPage === 1) {
@@ -59,7 +58,7 @@ function App() {
   //버튼
   const handleLoadMore = () => {
     const nextPage = page + 1;
-    if (search === "") loadPopularMovies(nextPage);
+    if (search === '') loadPopularMovies(nextPage);
     else loadSearchMovies(nextPage, search);
   };
 
